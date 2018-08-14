@@ -1,0 +1,216 @@
+body {
+    font-family: 'Syncopate', sans-serif;
+    background: #2C2F33;
+    color: white;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: .4rem;
+    padding-left: .4rem;
+}
+
+.title {
+    font-family: 'Audiowide', curside;
+    font-size: 60px;
+    padding-bottom: 40px;
+    .full-page & {
+        padding-top: 1em;
+    }
+}
+
+.features {
+    font-family: 'Audiowide', cursive;
+    li {
+        font-size: 32px;
+        ul li {
+            font-family: 'Syncopate', sans-serif;
+            font-size: 16px;
+        }
+    }
+}
+
+.button {
+    padding: 10px;
+    display: inline;
+    border: 1px solid white;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, .5);
+}
+
+.logo {
+    .footer & {
+        font-size: 40px;
+    }
+    font-size: 80px;
+    font-family: 'Audiowide', cursive;
+    span {
+        font-family: 'Syncopate', sans-serif;
+    }
+}
+
+.navbar {
+    border-bottom: 2px solid black;
+    background: #23272A;
+    padding: 0;
+    .navbar-brand {
+        font-family: 'Audiowide', cursive;
+    }
+}
+
+.social {
+    text-align: left;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.75);
+        div {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        ion-icon {
+            font-size: 40px;
+        }
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -4em;
+    visibility: hidden;
+}
+
+.background {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.75), 
+          rgba(0, 0, 0, 0.75)
+        ), url(/img/background.jpg);
+        background-size: cover;
+        background-position: right right;
+        border-radius: 0;
+        border-bottom: 2px solid black;
+    }
+    &.flip {
+        &:before {
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+        }
+    }
+    .container {
+        position: relative;
+        top: 15%;
+    }
+    hr {
+        color: white;
+    }
+    .read-more {
+        position: absolute;
+        background: #25D8D8;
+        bottom: -87px;
+        left: 50%;
+        transform: rotate(45deg) translate(-50%, 0);
+        height: 100px;
+        width: 100px;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        margin-top: 50px;
+        div {
+            transform: rotate(-45deg);
+            position: absolute;
+            font-family: 'Audiowide', cursive;
+            top: 0px;
+            padding-top: 23px;
+            line-height: 30px;
+            text-align: center;
+            left: 0;
+            right: 0;
+            font-size: 26px;
+            bottom: 0;
+            color: white;
+        }
+    }
+    .content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+    }
+}
+
+.full-page {
+    min-height: 100vh;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.full-page + .footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.big-icon {
+    padding: 1em;
+}
+
+.footer {
+    background: #23272A;
+    border-top: 2px solid black;
+    color: white;
+    padding-top: 20px;
+    .logo {
+        margin-bottom: 20px;
+    }
+    .nav {
+        margin-bottom: 20px;
+    }
+    .nav-item {
+        padding-right: 1em;
+        padding-left: 1em;
+        position: relative;
+        &:not(:last-child):after {
+            content: '';
+            border-right: 1px solid white;
+            height: 40px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+.large {
+    font-size: 60px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.buy-button {
+    animation: fadein 1s;
+}

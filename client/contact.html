@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" ng-app>
+
+<head>
+    <title>SuperMe Bot | Ultimate Supreme Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/materialize.min.css" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Syncopate" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="navbar fixed-top navbar-expand-md navbar-dark flex-column flex-md-row">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+        <img style="height: 47px; padding: 5px;" src="/images/blueears.png">
+        SuperMe<span style="font-family: 'Syncopate'; color: #25D8D8">BOT</span></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 14px;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#download">Download<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#roadmap">Roadmap</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav ml-auto flex-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://instagram.com/supermebot">
+            FAQ
+          </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+            Contact
+          </a>
+                </li>
+                <!--<li class="nav-item">
+          <sub>coming soon</sub>
+        </li>-->
+            </ul>
+        </div>
+    </header>
+    <section class="full-page">
+        <div class="container">
+        <h1 class="title">Contact Us</h1>
+        <div class="row">
+                <div class="col-md-8 offset-md-2">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="message">Password</label>
+                <textarea id="exampleInputPassword1" class="form-control" placeholder="Password"></textarea>
+            </div>
+        </form>
+        </div>
+        </div></div>
+    </section>
+    <footer class="footer navbar-dark">
+        <div class="container text-center">
+            <div class="logo"><img style="height: 60px; margin-right: 15px" src="/images/blueears.png" />SuperMe<span style="color: #25D8D8;">BOT</span></div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="navbar-nav nav flex-row justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Terms of Service<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Refund Policy</a>
+                        </li>
+                    </ul>
+                    <div class="col-sm-6 offset-sm-3" style="font-size: 12px;">Copyright SuperMe Bot 2018&copy;</div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a[href*="#"]').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top + 'px'
+                        }, 350);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
