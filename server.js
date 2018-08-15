@@ -3,7 +3,7 @@
 //
 // A simple chat server using Socket.IO, Express, and Async.
 //
-var http = require('http');
+var https = require('https');
 var path = require('path');
 
 var express = require('express');
@@ -15,7 +15,7 @@ var express = require('express');
 //  * `port` - The HTTP port to listen on. If `process.env.PORT` is set, _it overrides this value_.
 //
 var router = express();
-var server = http.createServer(router);
+var server = https.createServer(router);
 
 router.use(express.static(path.resolve(__dirname, 'client')));
 
