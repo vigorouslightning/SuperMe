@@ -6355,6 +6355,7 @@ hr {
     transform: scaleY(-1); }
 
 .full-page {
+  padding-top: 59px;
   flex: 1;
   text-align: center; }
 
