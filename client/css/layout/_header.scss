@@ -2,6 +2,13 @@ body {
     font-family: 'Syncopate', sans-serif;
     background: #2C2F33;
     color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    font-family: 'Audiowide' cursive;
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
@@ -10,11 +17,13 @@ body {
 }
 
 .title {
-    font-family: 'Audiowide', curside;
+    font-family: 'Audiowide', cursive;
     font-size: 60px;
-    padding
-    .full-page & {
-        padding-top: 1em;
+    @include media-breakpoint-down(md) {
+        font-size: 45px;
+    }
+    .roadmap & {
+        padding-bottom: 50px;
     }
 }
 
@@ -24,7 +33,15 @@ body {
         font-size: 32px;
         ul li {
             font-family: 'Syncopate', sans-serif;
-            font-size: 16p
+            font-size: 16px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 40px;
+                border: 2px solid #ddd;
+                background: white;
+                left: -30px;
+            }
         }
     }
 }
@@ -39,6 +56,11 @@ hr {
     border-top: 1px solid rgba(255, 255, 255, .5);
 }
 
+.buy-button {
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
 .logo {
     .footer & {
         font-size: 40px;
@@ -47,11 +69,14 @@ hr {
         height: 100px;
         margin-right: 15px;
         @include media-breakpoint-down(md) {
-            height: 40px;
+            height: 60px;
         }
     }
     font-size: 80px;
     @include media-breakpoint-down(md) {
+        font-size: 50px;
+    }
+    @include media-breakpoint-down(sm) {
         font-size: 30px;
     }
     font-family: 'Audiowide', cursive;
@@ -109,7 +134,7 @@ hr {
         background: linear-gradient(
           rgba(0, 0, 0, 0.75), 
           rgba(0, 0, 0, 0.75)
-        ), url(/img/background.jpg);
+        ), url(/images/background.jpg);
         background-size: cover;
         background-position: right right;
         border-radius: 0;
@@ -166,17 +191,11 @@ hr {
 }
 
 .full-page {
-    min-height: 100vh;
-    padding: 4em 2em;
+    flex: 1;
     text-align: center;
 }
 
-.full-page + .footer {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-}
+
 
 .big-icon {
     padding: 1em;
@@ -212,6 +231,10 @@ hr {
     font-size: 60px;
 }
 
+.navbar-collapse {
+    flex-basis: 100%;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -223,4 +246,11 @@ hr {
 
 .buy-button {
     animation: fadein 1s;
+}
+
+@include media-breakpoint-down(sm) {
+    .roadmap .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
