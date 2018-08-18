@@ -6243,6 +6243,9 @@ body {
           left: 0;
           top: 7px; }
 
+textarea {
+  min-height: 100px; }
+
 .button {
   padding: 10px;
   display: inline;
