@@ -6227,16 +6227,21 @@ body {
   font-family: 'Audiowide', cursive; }
   .features li {
     font-size: 32px; }
-    .features li ul li {
-      font-family: 'Syncopate', sans-serif;
-      font-size: 16px; }
-      .features li ul li:before {
-        content: '';
-        position: absolute;
-        width: 40px;
-        border: 2px solid #ddd;
-        background: white;
-        left: -30px; }
+    .features li ul {
+      position: relative;
+      list-style: none; }
+      .features li ul li {
+        font-family: 'Syncopate', sans-serif;
+        font-size: 16px;
+        padding-left: 10px; }
+        .features li ul li:before {
+          content: '';
+          position: absolute;
+          width: 40px;
+          border: 2px solid #ddd;
+          background: white;
+          left: 0;
+          top: 7px; }
 
 .button {
   padding: 10px;
@@ -6282,6 +6287,11 @@ hr {
   font-size: 12px;
   position: absolute;
   bottom: 0; }
+  @media (max-width: 991px) {
+    .social {
+      text-align: center;
+      left: 0;
+      right: 0; } }
   .social a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.75); }

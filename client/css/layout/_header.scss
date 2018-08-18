@@ -31,17 +31,23 @@ body {
     font-family: 'Audiowide', cursive;
     li {
         font-size: 32px;
-        ul li {
-            font-family: 'Syncopate', sans-serif;
-            font-size: 16px;
-            &:before {
-                content: '';
-                position: absolute;
-                width: 40px;
-                border: 2px solid #ddd;
-                background: white;
-                left: -30px;
-            }
+        ul {
+            position: relative;
+            list-style: none;
+            li {
+                font-family: 'Syncopate', sans-serif;
+                font-size: 16px;
+                padding-left: 10px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 40px;
+                    border: 2px solid #ddd;
+                    background: white;
+                    left: 0;
+                    top: 7px;
+                }
+            }    
         }
     }
 }
@@ -99,6 +105,11 @@ hr {
     font-size: 12px;
     position: absolute;
     bottom: 0;
+    @include media-breakpoint-down(md) {
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
     a {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.75);
